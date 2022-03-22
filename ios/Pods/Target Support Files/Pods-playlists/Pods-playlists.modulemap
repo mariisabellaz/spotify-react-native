@@ -1,6 +1,0 @@
-module Pods_playlists {
-  umbrella header "Pods-playlists-umbrella.h"
-
-  export *
-  module * { export * }
-}
