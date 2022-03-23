@@ -13,6 +13,7 @@ import {
 import AppLoading from 'expo-app-loading';
 
 import theme from './src/theme';
+import Routes from './src/routes';
 
 export default function App() {
   const [fontLoaded] = useFonts({
@@ -25,10 +26,11 @@ export default function App() {
   if (!fontLoaded) {
       return <AppLoading/>
   }
+
   return (
     <ThemeProvider theme={theme}>
       <StatusBar barStyle="dark-content" backgroundColor="transparent" translucent/>
-      <Text>teste</Text>
+      <Routes/>
     </ThemeProvider>
   );
 }
