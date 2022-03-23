@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatusBar } from 'react-native';
+import { StatusBar, Text } from 'react-native';
 
 import { ThemeProvider } from 'styled-components';
 import {
@@ -27,6 +27,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar barStyle="dark-content" backgroundColor="transparent" translucent/>
+      <Text>teste</Text>
     </ThemeProvider>
   );
 }
