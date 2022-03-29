@@ -49,7 +49,7 @@ O desáfio para este aplicativo foi criar de uma listagem de musicas e playlists
 │ 	│ 	└── icons
 │ 	│ 	└── animation
 │ 	├── components # Componentes genéricos da aplicação no padão Atomic Design
-│   ├── hooks # Pasta com os arquivos de hooks personalizados
+│ 	├── hooks # Pasta com os arquivos de hooks personalizados
 │ 	├── interfaces # Pasta com os arquivos de configuração (cores, tema, axios, strings)
 │ 	├── routes # Pasta com todos os arquivos e configuração de rota
 │ 	│ 	├─── Routes.js # Arquivo de configuração das Rotas
