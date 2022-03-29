@@ -1,36 +1,41 @@
-import 'react-native-gesture-handler';
 import React from 'react';
-import { StatusBar, Text } from 'react-native';
+import { ActivityIndicator, LogBox } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import { ThemeProvider } from 'styled-components/native';
+import { Provider } from 'react-redux';
 
-import { ThemeProvider } from 'styled-components';
-import {
-  useFonts,
-  Montserrat_400Regular,
-  Montserrat_400Regular_Italic,
-  Montserrat_500Medium,
-  Montserrat_600SemiBold
+import { 
+    useFonts,
+    Montserrat_700Bold, 
+    Montserrat_400Regular,
+    Montserrat_500Medium
 } from '@expo-google-fonts/montserrat';
-import AppLoading from 'expo-app-loading';
 
-import theme from './src/theme';
-import Routes from './src/routes';
+import theme from './src/theme/index';
+
+import { Routes } from '@routes/index';
+import store from './src/store/store';
+
+LogBox.ignoreAllLogs();
 
 export default function App() {
-  const [fontLoaded] = useFonts({
-    Montserrat_400Regular,
-    Montserrat_400Regular_Italic,
-    Montserrat_500Medium,
-    Montserrat_600SemiBold,
-});
 
-  if (!fontLoaded) {
-      return <AppLoading/>
-  }
+  const [fontsLoaded] = useFonts({
+    Montserrat_400Regular,
+    Montserrat_500Medium,
+    Montserrat_700Bold
+  });
+
+  if(!fontsLoaded){
+    return <ActivityIndicator size={30} color='#FFF' />
+  };
 
   return (
     <ThemeProvider theme={theme}>
-      <StatusBar barStyle="dark-content" backgroundColor="transparent" translucent/>
-      <Routes/>
+        <StatusBar style="light" translucent backgroundColor="transparent" />
+        <Provider store={store}>
+            <Routes/>
+        </Provider>
     </ThemeProvider>
   );
 }

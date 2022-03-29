@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.79 40.79">
+    <defs>
+        <style>.cls-1,.cls-2{fill:none;}.cls-1{stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;}
+        </style>
+    </defs>
+    <g id="Camada_2" data-name="Camada 2">
+        <g id="Layer_1" data-name="Layer 1">
+            <path 
+                class="cls-1" 
+                d="M34.41,15.88c0,9-8.78,14.95-12.94,16.81l-1.08.45-1.08-.45C15.15,30.83,6.37,24.85,6.37,15.88c0-4.55,3.39-8.23,7.55-8.23a7.42,7.42,0,0,1,6.47,4,7.43,7.43,0,0,1,6.47-4C31,7.65,34.41,11.33,34.41,15.88Z"
+            />
+            <rect class="cls-2" width="40.79" height="40.79"/>
+        </g>
+    </g>
+</svg>
