@@ -1,6 +1,6 @@
 
 
-![cover](.github/cover.png?style=flat)
+![cover](.github/project.gif?style=flat)
 
 
 ## 💻 Projeto
