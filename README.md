@@ -36,6 +36,8 @@ O desáfio para este aplicativo foi criar de uma listagem de musicas e playlists
 -   [ ] Jest
 
 ## Estrutura do projeto
+
+```cl
 ├── __tests__ # Pasta onde tem a configuração e arquivos de testes.
 ├── .expo # Pasta onde tem a configuração e arquivos necessários para o funcionamento do expo
 ├── android # Código fonte Android
@@ -72,7 +74,7 @@ O desáfio para este aplicativo foi criar de uma listagem de musicas e playlists
 ├── index.js # Arquivo de entrada para registrar a aplicaçào
 ├── package.json
 └── yarn.lock
-
+```
 ###  Api de referência para busca e listagem das musicas:
 ​
 https://developer.spotify.com/documentation/web-api/reference/#/
